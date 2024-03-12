@@ -28,7 +28,9 @@ int main(void)
     }
 	
 	glClearColor(1, 1, 0, 1);
-	
+
+	std::cout << "OpenGL version: " << GLVersion.major << "." << GLVersion.minor << std::endl;
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
@@ -40,9 +42,11 @@ int main(void)
 
         /* Poll for and process events */
         glfwPollEvents();
+
+        
     }
 	
-	std::cout << "OpenGL version: " << glVersion.major << "." << glVersion.minor << std::endl;
+	
 	
     glfwTerminate();
     return 0;
