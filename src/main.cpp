@@ -42,7 +42,7 @@ int main(void)
         glfwPollEvents();
     }
 	
-	std::cout<<"OpenGL version: "<<GLVersion.major<<"."<<GLVersion.minor<<std::endl;
+	std::cout << "OpenGL version: " << glVersion.major << "." << glVersion.minor << std::endl;
 	
     glfwTerminate();
     return 0;
